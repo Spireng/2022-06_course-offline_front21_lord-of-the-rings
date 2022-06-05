@@ -1,0 +1,359 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-top: 30px;
+    color: 2b2a2b;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 0 0 10px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.content_center,
+.dialog {
+    display: flex;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0 10px;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #454545 url("../img/pattern-ring_bg.svg");
+    background-size: 300px 300px;
+    background-attachment: fixed;
+}
+
+main {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.container {
+    padding: 0 1rem;
+    background-color: #fff;
+}
+
+.content_center {
+    justify-content: center;
+}
+
+.dialog {
+    align-items: flex-start;
+}
+
+.dialog img {
+    margin-right: 10px;
+}
+
+.dialog p {
+    text-indent: 0;
+}
+
+a {
+    transition: color 0.2s linear;
+}
+
+a:hover {
+    color: #874996;
+}
+
+.nav-contents--small,
+.nav-up--small {
+    display: none;
+}
+
+
+/* =============
+   nav-table */
+
+.nav-die {
+    width: 77px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 38px;
+    border: 1pt solid #2b2a2b;
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+}
+
+.nav-table--center {
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-table {
+    display: inline-grid;
+    width: 64px;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 56% 44%;
+    grid-template-areas:
+        "nav-table_up nav-table_up"
+        "nav-table_chapter nav-table_note"
+        "nav-table_chapter1 nav-table_note1"
+        "nav-table_chapter2 nav-table_note2"
+        "nav-table_chapter3 nav-table_note3"
+        "nav-table_chapter4 nav-table_note4"
+        "nav-table_chapter5 nav-table_note5"
+        "nav-table_down nav-table_down";
+}
+
+.nav-table_up {grid-area: nav-table_up;}
+.nav-table_chapter {grid-area: nav-table_chapter;}
+.nav-table_chapter1 {grid-area: nav-table_chapter1;}
+.nav-table_chapter2 {grid-area: nav-table_chapter2;}
+.nav-table_chapter3 {grid-area: nav-table_chapter3;}
+.nav-table_chapter4 {grid-area: nav-table_chapter4;}
+.nav-table_chapter5 {grid-area: nav-table_chapter5;}
+.nav-table_note {grid-area: nav-table_note;}
+.nav-table_note1 {grid-area: nav-table_note1;}
+.nav-table_note2 {grid-area: nav-table_note2;}
+.nav-table_note3 {grid-area: nav-table_note3;}
+.nav-table_note4 {grid-area: nav-table_note4;}
+.nav-table_note5 {grid-area: nav-table_note5;}
+.nav-table_down {grid-area: nav-table_down;}
+
+.nav-table_chapter {
+    padding-top: 4px;
+    padding-left: 2px;
+}
+
+.nav-table_chapter_number {
+    font-size: 23px;
+    color: #2b2a2b;
+    text-decoration: none;
+}
+
+.nav-table_note_circle {
+    display: block;
+    margin: 0 auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #2b2a2b;
+    transition: background-color 0.2s linear;
+}
+
+.nav-table_note_circle:hover {
+    background-color: #874996;
+}
+
+.nav-table_up_triangle {
+    display: block;
+    margin-bottom: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 32px 20px 32px;
+    border-color: transparent transparent #2b2a2b transparent;
+    transition: border-color 0.2s linear;
+}
+
+.nav-table_up_triangle:hover {
+    border-color: transparent transparent #874996 transparent;
+}
+
+.nav-table_down_triangle {
+    display: block;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 32px 0 32px;
+    border-color: #2b2a2b transparent transparent transparent;
+    transition: border-color 0.2s linear;
+}
+
+.nav-table_down_triangle:hover {
+    border-color: #874996 transparent transparent transparent;
+}
+
+.nav-table_down_triangle span,
+.nav-table_up_triangle span,
+.nav-table_note_circle {
+    font-size: 0;
+}
+
+hr {
+    opacity: 0;
+}
+
+
+/* =============
+   footer */
+
+footer {
+    padding: 30px 1rem;
+    margin: 0;
+    color: #fff;
+    background-color: #121212;
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+}
+
+.clients p {
+    margin-right: 1rem;
+    text-indent: 0;
+    text-align: center;
+}
+
+.copyright {
+    padding-top: 2rem;
+}
+
+.copyright p {
+    text-indent: 0;
+    text-align: center;
+}
+
+/* feedback */
+
+.feedback {
+    width: 278px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.feedback-title {
+    margin: 0 0 15px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #E57045;
+    text-align: center;
+}
+
+/* input */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input {
+    display: block;
+    padding: 8px 10px;
+    width: 238px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #28cbd1;
+}
+
+/* button */
+
+.button {
+    display: block;
+    width: 238px;
+    padding: 10px;
+    border: 0;
+    background-color: #4bb91b;
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+    transition: background-color 0.2s linear;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #41aa14;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #36980d;
+}
+
+
+/* =============
+   media */
+
+@media (max-width: 1190px) {
+    .nav-die {
+        opacity: .5;
+    }
+}
+
+@media (max-width: 587px) {
+    .clients {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .clients p {
+        margin: 0 0 25px 0;
+    }
+}
+
+@media (max-width: 426px) {
+    .dialog img {
+        display: none;
+    }
+    .dialog p {
+        text-indent: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        text-align: left;
+    }
+    .nav-die {
+        display: none;
+    }
+    .nav-contents--small,
+    .nav-up--small {
+        display: inline;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
