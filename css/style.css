@@ -116,10 +116,6 @@ a:hover {
     align-items: center;
 }
 
-.nav-table--center {
-
-}
-
 .nav-table {
     display: inline-grid;
     width: 64px;
